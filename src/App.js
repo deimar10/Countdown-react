@@ -11,13 +11,15 @@ function App() {
       backgroundImage: `url(${stars})` 
       }}>
    <div className="main-container">
+    <div className="body-container">
     <h1>We are launching soon</h1>
     <div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>  
-  <div class="grid-item">4</div>
-</div>
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>  
+      <div class="grid-item">4</div>
+    </div>
+    </div>
     <div className="bottom-container" style={{
       backgroundImage: `url(${hills})`,
     }}>
