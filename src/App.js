@@ -14,9 +14,9 @@ function App() {
   let now = new Date().getTime();
   let distance = countDownDate - now;
 
-  let days =  Math.floor(distance / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let days =  Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2,0);
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2,0);
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2,0);
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   document.getElementById("days").innerHTML = days;
@@ -32,12 +32,18 @@ function App() {
       }}>
    <div className="main-container">
     <div className="body-container">
-    <h1>We are launching soon</h1>
+    <h1>We 're launching soon</h1>
     <div class="grid-container">
       <div class="grid-item" id="days"></div>
       <div class="grid-item" id="hours"></div>
       <div class="grid-item" id="minutes"></div>  
       <div class="grid-item" id="seconds"></div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-text">Days</div>
+      <div class="grid-text">Hours</div>
+      <div class="grid-text">Minutes</div>  
+      <div class="grid-text">Seconds</div> 
     </div>
     </div>
     <div className="bottom-container" style={{
