@@ -1,4 +1,5 @@
 import './App.css';
+import './mobile.css';
 import stars from './images/bg-stars.svg'
 import hills from './images/pattern-hills.svg'
 import facebook from './images/icon-facebook.svg'
@@ -45,6 +46,7 @@ function App() {
       <div class="grid-text">Minutes</div>  
       <div class="grid-text">Seconds</div> 
     </div>
+    </div>   
     </div>
     <div className="bottom-container" style={{
       backgroundImage: `url(${hills})`,
@@ -55,7 +57,6 @@ function App() {
         <img src={instagram} />
       </div>
     </div>
-   </div>
    </body>
   );
 }
